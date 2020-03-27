@@ -7,5 +7,11 @@
 package problem5.circularqueue;
 //to implement circular queue
 public class MyCircularQueue {
+    private int front;
+    private int rear;
+    private int size;
+    private int maxSize;
+    private int[] circularQueue;
+
 
 }
