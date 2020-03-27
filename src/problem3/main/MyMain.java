@@ -16,6 +16,6 @@ public class MyMain {
     public static void main(String[] args) {
         MyPriorityQueue q = new MyPriorityQueue ();
         q.enqueue ( new Student ( "Ananya", 07 ) );
-
+        q.show ();
     }
 }
