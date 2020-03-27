@@ -28,14 +28,18 @@ public class MyCircularQueue {
         if (!isFull ()) {
             circularQueue[rear] = ele;
             rear = (rear + 1) % maxSize;
+            size++;
+        } else {
+            System.out.println ( "Queue is full now..." );
         }
     }
 
     public Student dequeue() {
         Student response = null;
         if (!isEmpty ()) {
-            response = circularQueue[front = (front + 1) % maxSize];
             size--;
+            response = circularQueue[front];
+            front = (front + 1) % maxSize;
             return response;
         } else {
             return response;
