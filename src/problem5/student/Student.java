@@ -11,5 +11,9 @@ public class Student {
     private int backLog;
     private int count;
 
-
+    public Student(String name, int backLog, int count) {
+        this.name = name;
+        this.backLog = backLog;
+        this.count = count;
+    }
 }
