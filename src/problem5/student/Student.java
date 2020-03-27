@@ -40,4 +40,9 @@ public class Student {
     public void setCount(int count) {
         this.count = count;
     }
+
+    public String toString() {
+        return getName () + " " + getBackLog () + " " + getCount ();
+
+    }
 }
