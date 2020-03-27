@@ -49,4 +49,10 @@ public class MyCircularQueue {
     private boolean isEmpty() {
         return size == 0;
     }
+
+    public void show() {
+        for (int i = 0; i < size; i++) {
+            System.out.println ( circularQueue[(i + front) % maxSize] );
+        }
+    }
 }
