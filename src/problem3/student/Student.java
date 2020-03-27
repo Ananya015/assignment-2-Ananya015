@@ -24,4 +24,8 @@ public class Student {
     public void setRollNo(int rollNo) {
         this.rollNo = rollNo;
     }
+
+    public String toString() {
+        return getName () + " " + getRollNo ();
+    }
 }
