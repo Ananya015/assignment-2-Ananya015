@@ -16,4 +16,28 @@ public class Student {
         this.backLog = backLog;
         this.count = count;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getBackLog() {
+        return backLog;
+    }
+
+    public void setBackLog(int backLog) {
+        this.backLog = backLog;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
 }
