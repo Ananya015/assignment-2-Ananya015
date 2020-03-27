@@ -18,11 +18,20 @@ public class LinkedList {
         last.setNext ( n );
         last=n;
 
-        if(n.getData ().getRollNo ()<first.getData ().getRollNo ()){
-            var temp=n.getData ();
+        if (n.getData ().getRollNo () < first.getData ().getRollNo ()) {
+            var temp = n.getData ();
             n.setData ( first.getData () );
             first.setData ( temp );
         }
 
+
+    }
+
+    public void display() {
+        var now = first;
+        while (now != null) {
+            System.out.println ( now.getData () );
+            now = now.getNext ();
+        }
     }
 }
