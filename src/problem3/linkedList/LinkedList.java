@@ -10,6 +10,19 @@ public class LinkedList {
 
     public void addLast(Student student){
         Node n =new Node ( student );
+        if(first==null){
+            first=last=n;
+            return;
+        }
+
+        last.setNext ( n );
+        last=n;
+
+        if(n.getData ().getRollNo ()<first.getData ().getRollNo ()){
+            var temp=n.getData ();
+            n.setData ( first.getData () );
+            first.setData ( temp );
+        }
 
     }
 }
