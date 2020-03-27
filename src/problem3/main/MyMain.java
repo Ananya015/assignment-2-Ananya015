@@ -23,5 +23,9 @@ public class MyMain {
         q.enqueue ( new Student ( "Aahna", 05 ) );
         q.enqueue ( new Student ( "fana khna", 25 ) );
         q.show ();
+
+        q.dequeue ();
+        q.show ();
+
     }
 }

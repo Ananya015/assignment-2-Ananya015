@@ -16,6 +16,10 @@ public class MyPriorityQueue {
         list.addLast ( student );
     }
 
+    public void dequeue() {
+        list.deleteFirst ();
+    }
+
     public void show() {
         list.display ();
     }
