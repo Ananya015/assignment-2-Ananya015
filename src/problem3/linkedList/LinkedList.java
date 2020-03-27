@@ -9,21 +9,24 @@ public class LinkedList {
     private Node last;
 
     public void addLast(Student student){
-        Node n =new Node ( student );
-        if(first==null){
-            first=last=n;
+        Node n = new Node ( student );
+        if (first == null) {
+            first = last = n;
             return;
         }
 
         last.setNext ( n );
-        last=n;
+        last = n;
 
-        if (n.getData ().getRollNo () < first.getData ().getRollNo ()) {
-            var temp = n.getData ();
-            n.setData ( first.getData () );
-            first.setData ( temp );
+        var now = first;
+        while (now != null) {
+            if (n.getData ().getRollNo () < now.getData ().getRollNo ()) {
+                var temp = n.getData ();
+                n.setData ( now.getData () );
+                now.setData ( temp );
+            }
+            now = now.getNext ();
         }
-
 
     }
 
