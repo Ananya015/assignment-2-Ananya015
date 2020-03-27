@@ -6,21 +6,23 @@
  */
 package problem3.node;
 
+import problem3.student.Student;
+
 public class Node {
-    private int data;
+    private Student data;
     private Node next;
 
-    public Node(int data, Node next) {
+    public Node(Student data) {
         this.data = data;
-        this.next = next;
+        this.next = null;
     }
 
-    public int getData() {
+    public Student getData() {
         return data;
     }
 
-    public void setData(int data) {
-        this.data = data;
+    public void setData(Student data) {
+        this.data =data;
     }
 
     public Node getNext() {
