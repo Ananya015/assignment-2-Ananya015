@@ -55,4 +55,44 @@ public class MyCircularQueue {
             System.out.println ( circularQueue[(i + front) % maxSize] );
         }
     }
+
+    public int getFront() {
+        return front;
+    }
+
+    public void setFront(int front) {
+        this.front = front;
+    }
+
+    public int getRear() {
+        return rear;
+    }
+
+    public void setRear(int rear) {
+        this.rear = rear;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public int getMaxSize() {
+        return maxSize;
+    }
+
+    public void setMaxSize(int maxSize) {
+        this.maxSize = maxSize;
+    }
+
+    public Student[] getCircularQueue() {
+        return circularQueue;
+    }
+
+    public void setCircularQueue(Student[] circularQueue) {
+        this.circularQueue = circularQueue;
+    }
 }
