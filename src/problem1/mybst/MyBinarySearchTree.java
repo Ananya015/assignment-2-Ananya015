@@ -10,6 +10,8 @@ import problem1.node.TreeNode;
 
 // to implement BinarySearchTree
 public class MyBinarySearchTree {
+
+   public Object postOrder;
    private TreeNode root;
    private int countRight;
 
