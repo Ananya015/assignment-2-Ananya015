@@ -62,5 +62,14 @@ public class BinarySearchTree {
         this.root = root;
     }
 
+    public void preOrder(TreeNode temp) {
+        if (temp == null) {
+            return;
+        } else {
+            preQueue.enqueue ( temp.getData () );
+            preOrder ( temp.getLeft () );
+            preOrder ( temp.getRight () );
+        }
+    }
 
 }
