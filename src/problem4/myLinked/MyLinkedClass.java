@@ -13,4 +13,15 @@ public class MyLinkedClass {
         last.setNext ( n );
         last = n;
     }
+
+    public void deleteFirst() {
+        if (first == null) {
+            first = last = null;
+            return;
+        }
+        var sec = first.getNext ();
+        first.setNext ( null );
+        first = sec;
+    }
+
 }
