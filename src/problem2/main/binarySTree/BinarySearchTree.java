@@ -14,4 +14,28 @@ public class BinarySearchTree {
         this.preQueue = preQueue;
         this.postQueue = postQueue;
     }
+
+    public void insert(int item) {
+        TreeNode n = new TreeNode ( item );
+        if (root == null) {
+            root = n;
+        } else {
+            TreeNode currentNode = root;
+            TreeNode parentNode = null;
+            while (currentNode != null) {
+                parentNode = currentNode;
+                if (n.getData () < currentNode.getData ()) {
+                    currentNode = currentNode.getLeft ();
+                } else {
+                    currentNode = currentNode.getRight ();
+                }
+            }
+            if (n.getData () < parentNode.getData ()) {
+                parentNode.setLeft ( n );
+            } else {
+                parentNode.setRight ( n );
+            }
+        }
+    }
+
 }
