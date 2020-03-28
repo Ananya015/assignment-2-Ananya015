@@ -92,4 +92,11 @@ public class BinarySearchTree {
         }
     }
 
+    public int getCountRight() {
+        return countRight;
+    }
+
+    public void setCountRight(int countRight) {
+        this.countRight = countRight;
+    }
 }
