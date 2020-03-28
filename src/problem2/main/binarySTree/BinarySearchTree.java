@@ -99,4 +99,25 @@ public class BinarySearchTree {
     public void setCountRight(int countRight) {
         this.countRight = countRight;
     }
+
+    public void traverse() {
+        TreeNode currentNode = root;
+        TreeNode parentNode = null;
+        this.countRight = 0;
+        while (currentNode != null) {
+            if (currentNode.getLeft () == null) {
+                countRight++;
+            }
+            if (parentNode.getData () == currentNode.getData ()) {
+
+            }
+            if (parentNode.getData () < currentNode.getData ()) {
+                System.out.println ( currentNode.getData () );
+                currentNode = currentNode.getLeft ();
+            }
+            if (parentNode.getData () > currentNode.getData ()) {
+                currentNode = currentNode.getRight ();
+            }
+        }
+    }
 }
