@@ -7,8 +7,8 @@ import problem4.myqueue.MyQueue;
 public class BinarySearchTree {
     private TreeNode root;
     private int countRight;
-    private final MyQueue preQueue;
-    private final MyQueue postQueue;
+    private MyQueue preQueue;
+    private MyQueue postQueue;
 
     public BinarySearchTree(MyQueue preQueue, MyQueue postQueue) {
         this.preQueue = preQueue;
@@ -37,5 +37,30 @@ public class BinarySearchTree {
             }
         }
     }
+
+    public MyQueue getPreQueue() {
+        return preQueue;
+    }
+
+    public void setPreQueue(MyQueue preQueue) {
+        this.preQueue = preQueue;
+    }
+
+    public MyQueue getPostQueue() {
+        return postQueue;
+    }
+
+    public void setPostQueue(MyQueue postQueue) {
+        this.postQueue = postQueue;
+    }
+
+    public TreeNode getRoot() {
+        return root;
+    }
+
+    public void setRoot(TreeNode root) {
+        this.root = root;
+    }
+
 
 }
