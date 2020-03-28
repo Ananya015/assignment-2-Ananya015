@@ -7,7 +7,11 @@ import problem4.myqueue.MyQueue;
 public class BinarySearchTree {
     private TreeNode root;
     private int countRight;
-    private MyQueue preQueue;
-    private MyQueue postQueue;
+    private final MyQueue preQueue;
+    private final MyQueue postQueue;
 
+    public BinarySearchTree(MyQueue preQueue, MyQueue postQueue) {
+        this.preQueue = preQueue;
+        this.postQueue = postQueue;
+    }
 }
