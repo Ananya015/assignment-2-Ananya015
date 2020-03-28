@@ -81,4 +81,15 @@ public class BinarySearchTree {
             postQueue.enqueue ( temp.getData () );
         }
     }
+
+    public void inOrder(TreeNode temp) {
+        if (temp == null) {
+            return;
+        } else {
+            inOrder ( temp.getLeft () );
+            System.out.println ( temp.getData () );
+            inOrder ( temp.getRight () );
+        }
+    }
+
 }
